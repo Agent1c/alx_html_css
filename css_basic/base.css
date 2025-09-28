@@ -7,23 +7,88 @@
 
 /* CSS reset rules */
 
-html, body {
+html,
+body {
 	height: 100%;
 	min-height: 100%;
 }
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, img, ins, kbd, q, s, samp,
-small, strike, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -31,28 +96,43 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
 
-body{
-    line-height: 1;
+body {
+	line-height: 1;
+	
 }
 
-blockquote, q{
-    quotes: none;
+blockquote,
+q {
+	quotes: none;
 }
 
-blockquote::before, blockquote::after, q::before, q::after{
-    content: '';
-    content: none;
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+	content: '';
+	content: none;
 }
 
-table{
-    border-collapse: collapse;
-    border-spacing: 0;
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 /* Fonts and colors */
@@ -61,29 +141,55 @@ body {
 	font-family: 'Josefin Sans', serif;
 	color: rgba(0, 0, 0, 0.8);
 }
-h1, h2, h3, h4, h5, h6, header {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header {
 	font-family: 'Yeseva One', sans-serif;
 }
-article {
+
+/* Article img adjustment */
+article img {
+	max-width: 100%;
 }
+
 header {
-	border-bottom: 1px solid rgb(221,221,221);
+	border-bottom: 1px solid rgb(221, 221, 221);
 	transition: border-bottom-color 1s ease;
+
+	padding: 20px 0;
+	height: auto;
+	background: #7fdbff;
+	box-shadow: 0 4px 8px 0 rgba(18, 62, 73, 0.1);
+
+	z-index: 1000;
 }
+
+
 header a {
 	color: rgba(0, 0, 0, 0.8);
+
+
 }
+
 aside {
-	background: #FAFAFA;
+	background: #FFCB9A;
 }
+
 aside p {
 	border: 1px solid #bbb;
 	background: #ddd;
 	color: black;
 }
+
 footer a {
 	color: rgba(0, 0, 0, 0.8);
 }
+
 a {
 	color: #F80002;
 }
@@ -99,13 +205,17 @@ a {
 
 article {
 	padding: 50px 15px;
+	background: #B2BEBF;
 }
-article > *:first-child {
+
+article>*:first-child {
 	margin-top: 0;
 }
+
 aside {
 	padding: 50px 15px;
 }
+
 header .right {
 	float: right;
 	margin: 0 10px 15px;
@@ -113,28 +223,41 @@ header .right {
 
 
 /* Header */
-header {
-	padding: 20px 0;
-	height: 80px;
+
+@media (max-width: 400px) {
+
+	/* Adjusted the ul to be responsive in column */
+	header ul {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
 }
+
 header ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
+
 header li {
 	display: inline;
-	vertical-align:middle;
+	vertical-align: middle;
 }
+
 header li:first-child {
 	margin: 0;
 }
+
 header li a {
 	margin: 0 10px;
 }
+
 header li.logo {
-	font-size: 36px;
+	font-size: 48px;
+	padding: 0 .7rem;
 }
+
 header a {
 	text-decoration: none;
 }
@@ -153,6 +276,7 @@ aside p {
 footer {
 	padding: 5px 15px;
 	height: 80px;
+	background: #7fdbff;
 }
 
 
@@ -161,41 +285,49 @@ footer {
 p {
 	margin-bottom: 15px;
 }
+
 h1 {
 	font-size: 36px;
 	margin: 40px 0 20px;
 }
+
 h2 {
 	font-size: 32px;
 	margin: 30px 0 15px;
 }
+
 h3 {
 	font-size: 28px;
 	margin: 25px 0 10px;
 }
+
 h4 {
 	font-size: 20px;
 	font-weight: bold;
 	margin: 20px 0 10px;
 }
+
 h5 {
 	font-size: 18px;
 	font-weight: bold;
 	margin: 15px 0 10px;
 }
+
 h6 {
 	font-weight: bold;
 	margin: 5px 0;
 }
 
 @media (max-width: 800px) {
-  body.works_on_smartphone {
-  	display: block;
-  }
-  body.works_on_smartphone main {
-  	display: block;
-  }
-  header .right {
-  	float: none;
-  }
+	body.works_on_smartphone {
+		display: block;
+	}
+
+	body.works_on_smartphone main {
+		display: block;
+	}
+
+	header .right {
+		float: none;
+	}
 }
