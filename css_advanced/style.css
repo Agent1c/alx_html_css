@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*,
+:before,
+:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --purple-bg: rgb(195, 114, 255);
+    --mainBtn-color: rgb(255, 94, 234);
+    --secondary-text-color: #444444;
+    --white-text: #ffffff;
+    --footer-bg: rgb(7, 22, 41);
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    color: var(--white-text);
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.hero {
+    background: url(/css_advanced/images/Object.png) no-repeat center;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.banner .banner_div {
+    text-align: center;
+    padding: ;
+}
+
+.banner h2 {
+    text-align: center;
+    padding: 3rem;
+}
+
+.span_color {
+    color: var(--mainBtn-color);
+    /* color: aquamarine; */
+}
+
+.banner_div h1 {
+    font-size: 5rem;
+    padding-top: 5rem;
+}
+
+.banner_div p {
+    padding: 2rem;
+}
+
+/* .banner_div button{
+    padding: 1rem;
+    border-radius: 20px;
+    border-style: none;
+    box-shadow: 2px 1px 8px rgba(0, 0, 0, .8);
+    font-size: 18px;
+    background: var(--mainBtn-color);
+ 
+} */
+
+.banner_content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.span_emoj {
+    padding: 1.5rem;
+}
+
+.card img {
+    border-radius: 50%;
+}
+
+/* --------------Quote------------- */
+#quote-section {
+    background: var(--purple-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 4rem;
+}
+
+blockquote h4 {
+    padding: 1rem 0;
+}
+
+/* ---------------------------- videos ---------------------------- */
+.videos h2 {
+    text-align: center;
+    padding: 3rem 0;
+    color: #222;
+}
+
+.video_content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    place-items: space-between;
+    /* place-content: center; */
+    /* display: flex;   
+ gap: 40px;
+ justify-content: center; */
+}
+
+.video_block {
+    display: block;
+    max-width: 80%;
+    /* max-width: 100%; */
+    /* overflow:hidden; */
+    color: var(--secondary-text-color);
+}
+
+.video_block h3 {
+    padding: .4rem 0;
+}
+
+.video_author,
+.video_author img,
+.video_ratings img,
+.video_ratings {
+    display: flex;
+    align-items: center;
+    padding: .3rem;
+}
+
+.video_author h4 {
+    padding-left: .5rem;
+    color: var(--purple-bg);
+}
+
+.video_ratings p {
+    /* text-align: right; */
+    color: var(--purple-bg);
+
+}
+
+/* ---------------------------- FAQ ---------------------------- */
+.fAq {
+    background: #d7d6d6;
+    padding: 1rem 0;
+}
+
+.fAq h3 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.fAq_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px 20px;
+    place-content: center;
+    padding: 1rem 5rem;
+
+}
+
+.fAq_box div {
+    padding: .3rem 5rem;
+}
+
+.fAq_box div h4 {
+    padding: 1rem 0;
+}
+
+footer {
+    background: var(--footer-bg);
+}
+
+footer p {
+    text-align: center;
+    padding: 1.3rem 1rem;
+    color: #6c6a6a;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    border: 1px solid;
+}
+
+.membership {
+    background: var(--footer-bg);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+
+.membership h3{
+    margin: 1rem 0;
+    text-align: center;
+}
+
+
+button:hover{
+    background: rgb(7,22,41);
+    color: #fff;
+    border: 1px dotted #6c6a6a;
+}
+
+
+.btn{
+    padding: 1rem;
+    border-radius: 20px;
+    border-style: none;
+    box-shadow: 2px 1px 8px rgba(0, 0, 0, .8);
+    font-size: 18px;
+    background: var(--mainBtn-color);
+    /* max-width: 100px; */
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 700;
+
+} 
+.colorBtn{
+
+}
+.member_container {
+    display: flex;
+    gap: 30px;
+}
+
+.membership_content {
+    margin: .8em;
+    padding: 2rem;
+}
+
+.membership_content h4 {
+    padding: 1rem 0;
+}
