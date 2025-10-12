@@ -1,0 +1,95 @@
+@import url("https://use.typekit.net/lgo6bbn.css");
+
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --source-sans-pro: "source-sans-pro", sans-serif;
+    --cta-button: #ff6565;
+
+    --primary-color:;
+    --secondary-color:;
+}
+body {
+    /* 4. Add accessible line-height */
+    line-height: 1.5;
+    /* 5. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    width: 100%;
+
+
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/***** Hero Section *****/  
+.hero{
+    background-image: url("/headphones/asserts/images/headphones_hero_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    /* display: flex; */
+
+}
+
+.humburger-menu{
+    float: left;
+    padding: 1em;
+}
+
+
+.nav{
+    display: flex;
+    gap: 5em;
+    align-items: center;
+    padding: 2em 0;
+}
+/***** End Hero Section *****/
