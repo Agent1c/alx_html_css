@@ -1,5 +1,19 @@
 @import url("https://use.typekit.net/lgo6bbn.css");
 
+@font-face {
+    font-family: 'Spin Cycle 3D OT';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Spin Cycle 3D OT'), url('/headphones/asserts/fonts/spincycle_3d_ot.otf') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Spin Cycle OT';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Spin Cycle OT'), url('/headphones/asserts/fonts/spincycle_ot.otf') format('woff');
+}
 
 /* 1. Use a more-intuitive box-sizing model */
 *,
@@ -9,13 +23,20 @@
     padding: 0;
     box-sizing: border-box;
 }
-:root{
-    --source-sans-pro: "source-sans-pro", sans-serif;
+
+:root {
+    --source-sans-pro-text: "source-sans-pro", sans-serif;
+    --spin-cycle-OT-text: 'Spin Cycle OT', sans-serif;
     --cta-button: #ff6565;
 
-    --primary-color:;
-    --secondary-color:;
+    --primary-color:#ffffff ;
+    --secondary-color:#071629 ;
+
+    --active-hover: var(--cta-button);
+    --opacity: 0.9;
+    --max-width-content: 1000px;
 }
+
 body {
     /* 4. Add accessible line-height */
     line-height: 1.5;
@@ -23,73 +44,97 @@ body {
     -webkit-font-smoothing: antialiased;
     text-align: center;
     width: 100%;
-
+    font-family: var(--source-sans-pro-text);
+    color: var(--primary-color);
 
 }
 
-/* 6. Improve media defaults */
-img,
-picture,
-video,
-canvas,
-svg {
-    display: block;
-    max-width: 100%;
-}
 
-/* 7. Inherit fonts for form controls */
-input,
-button,
-textarea,
-select {
-    font: inherit;
-}
-
-/* 8. Avoid text overflows */
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    overflow-wrap: break-word;
-}
-
-/* 9. Improve line wrapping */
-p {
-    text-wrap: pretty;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    text-wrap: balance;
-}
-
-/***** Hero Section *****/  
-.hero{
+/***** Hero Section *****/
+.hero {
     background-image: url("/headphones/asserts/images/headphones_hero_1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 100vh;
     /* display: flex; */
 
 }
 
-.humburger-menu{
-    float: left;
-    padding: 1em;
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
 }
 
-
-.nav{
+nav {
     display: flex;
     gap: 5em;
     align-items: center;
     padding: 2em 0;
+    justify-content: space-between;
+    margin: 0 auto;
 }
+
+nav .nav-list{
+    display: none;
+    /* display: flex; */
+    gap: 30px;
+}
+
+.humburger-menu{
+    /* float: left; */
+    /* padding: 1em; */
+    background: none;
+    color: var(--primary-color);
+    border-style: none;
+    width: 50px;
+}
+
+
 /***** End Hero Section *****/
+
+/***** Article *****/ 
+article{
+    padding-top: 18rem;
+    width: 80%;
+}
+article h1{
+    font-family: var(--source-sans-pro-text);
+    font-size: 32px;
+}
+
+article h2{
+    font-size: 16px;
+
+}
+article p{
+    /* font-family: var(--spin-cycle-OT-text) */
+    font-weight: 400;
+    font-size: 16px;
+    padding-top: 4em;
+}
+
+article button{
+    border-radius: 22px;
+    background: var(--cta-button);
+    padding: 1em;
+    border: none;
+    color: var(--primary-color);
+    text-align: center;
+    font-weight: 600;
+}
+/***** End Article *****/
+
+/***** Section *****/ 
+section h2{
+    color: var(--secondary-color);
+}
+section h3{
+    color: var(--secondary-color);
+}
+section p{
+    color: var(--secondary-color);
+}
+/***** End Section *****/
