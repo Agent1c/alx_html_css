@@ -1,0 +1,472 @@
+@import url("https://use.typekit.net/lgo6bbn.css");
+
+@font-face {
+    font-family: 'Spin Cycle 3D OT';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Spin Cycle 3D OT'), url('/headphones/asserts/fonts/spincycle_3d_ot.otf') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Spin Cycle OT';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Spin Cycle OT'), url('/headphones/asserts/fonts/spincycle_ot.otf') format('woff');
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --source-sans-pro-text: "source-sans-pro", sans-serif;
+    --spin-cycle-OT-text: 'Spin Cycle OT', sans-serif;
+    --cta-button: #ff6565;
+
+    --primary-color: #ffffff;
+    --secondary-color: #071629;
+
+    --active-hover: var(--cta-button);
+    --opacity: 0.9;
+    --max-width-content: 1000px;
+}
+
+body {
+    /* 4. Add accessible line-height */
+    line-height: 1.5;
+    /* 5. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    width: 100%;
+    font-family: var(--source-sans-pro-text);
+    color: var(--primary-color);
+margin: 0 auto;
+
+
+}
+
+/* Unversal Button Class */
+.cta-button {
+    border-radius: 32px;
+    background: var(--cta-button);
+    padding: 1.2em 2.3em;
+    border: none;
+    color: var(--primary-color);
+    text-align: center;
+    font-weight: 600;
+}
+
+.cta-button:hover {
+    opacity: var(--opacity);
+}
+
+.article {
+    padding-top: 18rem;
+    max-width: 80%;
+    /* width: 480px; */
+}
+
+
+/***** Hero Section  Default Size*****/
+header {
+    width: 100%;
+}
+
+.hero {
+    background-image: url("/headphones/asserts/images/headphones_hero_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* height: 100vh; */
+    /* display: flex; */
+
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    /* max-width: var(--max-width-content); */
+}
+
+
+nav {
+    display: flex;
+    gap: 5em;
+    align-items: center;
+    padding: 2em 0;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 100%;
+}
+
+nav .nav-list,
+a,
+li {
+    list-style: none;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+nav .nav-list {
+    /* display: none; */
+    display: flex;
+    gap: 30px;
+}
+
+.logo-button {
+    border: none;
+    background: none;
+    font-size: 32px;
+    display: none;
+}
+
+
+nav .nav-list a:hover {
+    cursor: pointer;
+    color: var(--cta-button);
+    opacity: var(--opacity);
+}
+
+nav .nav-list a:active {
+    color: var(--cta-button);
+}
+
+
+.logo-button:hover {
+    opacity: var(--opacity);
+    cursor: pointer;
+}
+
+/***** Article *****/
+article {
+    padding-top: 18rem;
+    width: 80%;
+    /* width: 480px; */
+    max-width: var(--max-width-content);
+}
+
+article h1 {
+    font-family: var(--source-sans-pro-text);
+    font-size: 32px;
+    /* padding: .7em; */
+}
+
+article h2 {
+    font-size: 16px;
+    padding-bottom: 1.2em;
+
+}
+
+article p {
+    /* font-family: var(--spin-cycle-OT-text) */
+    font-weight: 400;
+    font-size: 16px;
+    padding-top: 2.2em;
+    padding-bottom: 2.1em;
+}
+
+article button {
+    border-radius: 32px;
+    background: var(--cta-button);
+    padding: 1.2em 2.3em;
+    border: none;
+    color: var(--primary-color);
+    text-align: center;
+    font-weight: 600;
+}
+
+/***** End Article *****/
+
+/* Screen Size 400px */
+@media (max-width: 400px) {
+    nav {
+        display: flex;
+        gap: 5em;
+        align-items: center;
+        padding: 2em 0;
+        justify-content: space-around;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    nav #logo{
+    text-align: center;
+}
+    nav .nav-list {
+        display: none;
+        /* display: flex; */
+        gap: 30px;
+    }
+
+    .logo-button {
+        border: none;
+        background: none;
+        font-size: 32px;
+        display: block;
+    }
+
+}
+
+@media (max-width: 769px) {
+    nav {
+        display: flex;
+        gap: 5em;
+        align-items: center;
+        padding: 2em 0;
+        justify-content: space-around;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .logo-button {
+        border: none;
+        background: none;
+        font-size: 32px;
+        display: block;
+    }
+
+    nav .nav-list {
+        display: none;
+        /* display: flex; */
+        gap: 30px;
+    }
+}
+
+/***** End Hero Section *****/
+
+
+
+/***** cSection *****/
+
+@media (max-width: 400px) {
+
+    .fQa {
+        width: 400px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+
+.fQa {
+    max-width: var(--max-width-content);
+    width: 100%;
+    margin: 0 auto;
+    color: var(--secondary-color);
+    padding: 1.5em;
+}
+
+.fQa h2 {
+    color: var(--secondary-color);
+    padding: 1.5em;
+}
+
+.fQa-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: minmax(200px);
+    gap: 30px;
+}
+
+.card {
+    /* padding: 2em; */
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.card h3 {
+    color: var(--secondary-color);
+    /* border: 1px solid green;s */
+    padding-bottom: 1.1em;
+}
+
+.card img {
+    padding: 2em;
+
+}
+
+section p {
+    color: var(--secondary-color);
+    padding: 0 2.5em;
+}
+
+/***** End Section *****/
+
+/***** Call to Action *****/
+
+.cta-background {
+    background: url(/headphones/asserts/images/headphones_hero_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* width: 100%; */
+    /* max-width: 360px; */
+}
+
+@media (max-width: 400px) {
+    .cta {
+        padding-top: 6.5em;
+        width: 480px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+.cta{
+    max-width: var(--max-width-content);
+    margin: 0 auto;
+}
+.cta h3 {
+    /* border: 1px solid purple; */
+    padding: 1.5em 0;
+    font-size: 32px;
+    font-family: var(--source-sans-pro-text);
+}
+
+.cta p {
+    color: var(--primary-color);
+    padding: 1.5em;
+}
+
+
+/*  cta-child  */
+.cta-child {
+    /* border: 1px solid #ff6565; */
+    /* margin: 0 auto; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: minmax(200px);
+    gap: 30px;
+    padding: 3em;
+}
+
+
+.cta-child h2 {
+    font-size: 42px;
+    padding-top: 2em;
+}
+
+.cta-child p {
+    padding-bottom: 2em;
+    /* top: 20px; */
+
+}
+
+.item {
+    /* text-align: center; */
+    padding: 2em;
+    margin: 0 auto;
+    place-items: center;
+}
+
+.cta-child-bg {
+    background: url(/headphones/asserts/images/polygon_icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+/***** End Call to Action *****/
+
+/***** Contacts Forms *****/
+.contacts {
+    /* background: #333; */
+    color: var(--secondary-color);
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contact_container {
+    padding: 0 0 1em 0;
+    margin: 0 auto;
+}
+
+.contacts h2 {
+    font-size: 32px;
+    padding: 1em 0;
+    text-align: center;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #d3d0d0;
+    display: block;
+    padding: 1em;
+    max-width: 400px;
+}
+
+label{
+    display: block;
+    margin: 0 auto;
+    width: 380px;
+}
+
+.form-group {
+    text-align: start;
+    padding: 2em;
+}
+
+/***** End Contacts Forms *****/
+
+
+/***** Footer *****/
+@media (max-width: 400px) {
+    /* .footer-box{
+        background: var(--secondary-color);
+        display: flex;
+        align-items: center;
+        clear: both;
+        flex-direction: column;
+        padding: 1em;
+    } */
+
+
+}
+
+.social-nav-footer {
+    display: flex;
+    gap: 20px;
+
+}
+
+.footer-box {
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items: center;
+    justify-content: space-between;
+    padding: 1em 0em;
+    
+}
+
+.f-box{
+    width: 40px;
+}
+
+footer {
+    /* max-width: var(--max-width-content); */
+    margin: 0 auto;
+    background: var(--secondary-color);
+    padding: 1em;
+}
+
+footer p {
+    padding: .2em;
+    color: #919191;
+}
+
+
+/***** End Footer *****/
